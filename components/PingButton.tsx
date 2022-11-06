@@ -30,7 +30,7 @@ export const PingButton: FC = () => {
 
 		transaction.add(instruction)
 		sendTransaction(transaction, connection).then(sig => {
-			console.log(sig)
+			console.log(`Explorer URL: https://explorer.solana.com/tx/${sig}?cluster=devnet`)
 		})
 	}
 
